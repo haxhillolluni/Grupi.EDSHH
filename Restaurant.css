@@ -162,6 +162,21 @@ body,html{
     justify-content: center;
     align-items: center;
     left: 15%;
-   
     
+}
+#CONTACT{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#message{
+    height:150px;
+}
+#contactUS{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+#contactUS2{
+    margin-top: 50px;
+    margin-left: 100px;
 }
