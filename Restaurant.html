@@ -24,14 +24,11 @@
             <div class="menu">
                 <h3>Home</h3>
             </div>
-
             <div class="menu">
                 <h3>About</h3>
             </div>
-
             <div class="menu">
                 <h3>Contact</h3>
-
             </div>
             <div class="menu">
                 <h3>Order Online</h3>
@@ -46,27 +43,53 @@
     <body>
             
            
-            <div class="bg-img">
-                
-                
-               
-                <form action="/action_page.php" class="container2">
-                   
-                    <h1>Login</h1>
+        <div class="main">
+          
+            <div id="formatBox1">               
+                    <div id="buttonsBox">
+                        <button class="buttons"id="loginButtonLogin">Login</button>
+                        <button class="buttons" id="loginButtonRegister" onclick="registerForm()">Register</button>
 
-                    <label for=""><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="" id="username"/>
-
-                    <label for=""><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password " name="password " id="password"></input>
+                    </div>
                     
-                  
-                    <input type="button" value="Login" id="login" onclick="validate()"></input>
-                    
-                </form>
-                
-
+                    <form id="form">
+                        <label>Username:</label>
+                        <input type="text" name="username" id="username"  class="txtField" required>
+                       
+                        <label>Password:</label>
+                        <input type="password" name="password" id="password"  class="txtField" required>
+                       
+                        <input type="submit" name="Login" id="login"  onclick ="validate()" class="submitButton" value="Login">
+                    </form>
             </div>
+
+
+            
+            <div id="formatBox2" style="height: 450px;">
+                <div id="buttonsBox">
+                    <button class="buttons"id="registerButtonLogin" onclick="loginForm()">Login</button>
+                    <button class="buttons" id="registerButtonRegister">Register</button>
+
+                </div>
+                
+                <form id="form2">
+                    <label>Name:</label>
+                    <input type="text" name="username2" id="username2"  class="txtField" required>
+                    
+                    <label>Lastname:</label>
+                    <input type="text" name="lastname" id="lastname" class="txtField" required>
+                    
+                    <label>Password:</label>
+                    <input type="password" name="password" id="password"  class="txtField" required>
+
+                    <input type="submit" name="Login" class="submitButton" value="Register">
+                </form>
+            </div>
+
+  
+
+        </div>
+
             <div id ="foodContainer">
                <tr>
                    <td><h1>Zbritje deri 20%</h1></td>
@@ -108,6 +131,18 @@
             </div>
             
                 
+            <script>
 
+                function registerForm(){
+                    document.getElementById("formatBox2").style.display="block";
+                    document.getElementById("formatBox1").style.display="none";
+                }
+    
+                function loginForm(){
+                    document.getElementById("formatBox1").style.display="block";
+                    document.getElementById("formatBox2").style.display="none";
+                }
+            
+            </script>
     </body>
 </html>

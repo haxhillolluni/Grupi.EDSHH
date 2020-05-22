@@ -9,10 +9,12 @@
         if(username.value.trim() == ""){
             alert('Please fill your username');
             username.focus();
+            username.style.borderColor='red';
         
         }else if(password.value.trim() ==""){
                 alert('Please fill your password ')
                 password.focus();
+                password.style.borderColor='red';
         }
         
     }
