@@ -41,54 +41,59 @@
         </div>
     </head>
     <body>
-            
-           
-        <div class="main">
-          
-            <div id="formatBox1">               
+            <div class="main" > 
+                <h1 style="background-color: darkred; color: white; width: 370px; padding-left: 50px;">Caffe&Food and more</h1>
+                <div id="formatBox1">
+                                    
+                        <div id="buttonsBox">
+                            <button class="buttons"id="loginButtonLogin">Login</button>
+                            <button class="buttons" id="loginButtonRegister" onclick="registerForm()">Register</button>
+
+                        </div>
+                        
+                        <form id="form">
+                            <label>Username:</label>
+                            <input type="text" name="username" id="username" placeholder="Enter Username" class="txtField" required>
+                            
+                        
+                            <label>Password:</label>
+                            <input type="password" name="password" id="password" placeholder="Enter Password" class="txtField" required>
+                            
+                        
+                            <input type="submit" name="Login" id="login"  onclick ="validate()" class="submitButton" value="Login">
+                        </form>
+                </div>
+
+
+                
+                <div id="formatBox2" style="height: 450px;">
                     <div id="buttonsBox">
-                        <button class="buttons"id="loginButtonLogin">Login</button>
-                        <button class="buttons" id="loginButtonRegister" onclick="registerForm()">Register</button>
+                        <button class="buttons"id="registerButtonLogin" onclick="loginForm()">Login</button>
+                        <button class="buttons" id="registerButtonRegister">Register</button>
 
                     </div>
                     
-                    <form id="form">
-                        <label>Username:</label>
-                        <input type="text" name="username" id="username" placeholder="Enter Username" class="txtField" required>
-                       
+                    <form id="form2">
+                        <label>Name:</label>
+                        <input type="text" name="username2" id="username2" placeholder="Enter name"  class="txtField"  minlength="3"  required
+                        title="Emri duhet te kete 3 ose me shume karaktere">
+                        
+                        <label>Lastname:</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Enter lastname" class="txtField"  min="3" required 
+                        title="lastname duhet te kete 3 ose me shume karaktere"  >
+                        
                         <label>Password:</label>
-                        <input type="password" name="password" id="password" placeholder="Enter Password" class="txtField" required>
-                       
-                        <input type="submit" name="Login" id="login"  onclick ="validate()" class="submitButton" value="Login">
+                        <input type="password" name="password" id="password"placeholder="Enter Password"  class="txtField" required
+                        pattern=".{8,}" title="Eight or more characters">
+
+                        <input type="submit" name="Login" class="submitButton" onclick ="validate2()" value="Register">
                     </form>
-            </div>
-
-
-            
-            <div id="formatBox2" style="height: 450px;">
-                <div id="buttonsBox">
-                    <button class="buttons"id="registerButtonLogin" onclick="loginForm()">Login</button>
-                    <button class="buttons" id="registerButtonRegister">Register</button>
-
                 </div>
-                
-                <form id="form2">
-                    <label>Name:</label>
-                    <input type="text" name="username2" id="username2" placeholder="Enter name"  class="txtField" required>
-                    
-                    <label>Lastname:</label>
-                    <input type="text" name="lastname" id="lastname" placeholder="Enter lastname" class="txtField" required>
-                    
-                    <label>Password:</label>
-                    <input type="password" name="password" id="password"placeholder="Enter Password"  class="txtField" required>
 
-                    <input type="submit" name="Login" class="submitButton" value="Register">
-                </form>
+    
+
             </div>
-
-  
-
-        </div>
+        
 
             <div id ="foodContainer">
                <tr>
@@ -203,7 +208,18 @@
                         <h3>Jeff Bezos</h3>
                          Master Chef / kuzhine franceze
                         </div>
+                    
                 </div>
             </div>
+           
+                <div id="kontenti">
+                    <header>
+                        <h2 >Disa pamje te Restaurantit</h2>
+                        <img id="slideShow"/>
+                    </header>
+
+                </div>
+                
+               
     </body>
 </html>

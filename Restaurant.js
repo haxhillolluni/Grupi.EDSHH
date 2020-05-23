@@ -18,6 +18,28 @@
         }
         
     }
+    function validate2(){
+        var username2 = document.getElementById('username2');
+        var lastname = document.getElementById('lastname');
+        var password = document.getElementById('password');
+
+        if(username2.value.trim() == ""){
+            alert('Please fill your name');
+           
+            username2.style.borderColor='red';
+        
+        }else if(lastname.value.trim()==""){
+            alert('Please fill your last name');
+            lastname.focus();
+            
+
+        }else if(password.value.trim() ==""){
+                alert('Please fill your password')
+                password.focus();
+                password.style.borderColor='red';
+        }
+        
+    }
     function send() {
         var yourName = document.getElementById('yourName');
         var yourEmail=document.getElementById('yourEmail');
@@ -43,3 +65,14 @@
         location.reload();
         
     }
+    var i=0;
+    function ndrysho_Foto() {
+        let foto = document.getElementById("slideShow");
+            foto.src="inside"+(i++%4)+".jpg";
+        
+    }
+    function slider() {
+        setInterval(ndrysho_Foto,160);
+        
+    }
+    document.body.addEventListener('load',slider());
