@@ -67,7 +67,7 @@
     }
     var i=0;
     function ndrysho_Foto() {
-        let foto = document.getElementById("slideShow");
+        var foto = document.getElementById("slideShow");
             foto.src="inside"+(i++%4)+".jpg";
         
     }
