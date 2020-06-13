@@ -40,7 +40,7 @@
             
         </div>
     </head>
-    <body>
+    <body >
             <div class="main" > 
                 <h1 style="background-color: darkred; color: white; width: 370px; padding-left: 50px;">Caffe&Food and more</h1>
                 <div id="formatBox1">
@@ -66,31 +66,37 @@
 
 
                 
-                <div id="formatBox2" style="height: 450px;">
+                <div id="formatBox2" style="height: 480px;">
                     <div id="buttonsBox">
                         <button class="buttons"id="registerButtonLogin" onclick="loginForm()">Login</button>
                         <button class="buttons" id="registerButtonRegister">Register</button>
 
-                    </div>
+                    </div><br>
                     
-                    <form id="form2">
-                        <label>Name:</label>
-                        <input type="text" name="username2" id="username2" placeholder="Enter name"  class="txtField"  minlength="3"  required
-                        title="Emri duhet te kete 3 ose me shume karaktere">
+                    <form name ="form" id="form2">
+                        <label>First Name:</label>
+                        <input type="text" name="firstname" autocomplete="off" id="firstname" placeholder="Enter name"  class="txtField"required>
                         
                         <label>Lastname:</label>
-                        <input type="text" name="lastname" id="lastname" placeholder="Enter lastname" class="txtField"  min="3" required 
-                        title="lastname duhet te kete 3 ose me shume karaktere"  >
+                        <input type="text" name="lastname"autocomplete="off" id="lastname" placeholder="Enter lastname" class="txtField"required>
+
+                        <label>Email:</label>
+                        <input type="text" name="email" id="email" autocomplete = 'off' placeholder="Enter email" class="txtField"required>
+
                         
                         <label>Password:</label>
-                        <input type="password" name="password" id="password"placeholder="Enter Password"  class="txtField" required
-                        pattern=".{8,}" title="Eight or more characters">
+                        <input type="password" name="password" autocomplete="off" id="password" placeholder="Enter Password"  class="txtField"required>
 
-                        <input type="submit" name="Login" class="submitButton" onclick ="validate2()" value="Register">
+                        <label>Birthday Date:</label>
+                        <input type="text" name="birthdate" autocomplete="off" id="birthdate" placeholder="Enter BirthDate" class="txtField"required>
+
+                        <button  name="" class="submitButtonRegister" onclick ="validate2()" value="Register">Register</button>
                     </form>
+                    
                 </div>
+                
 
-    
+                
 
             </div>
         
@@ -137,22 +143,8 @@
                 
             </div>
             
-                
-            <script>
-
-                function registerForm(){
-                    document.getElementById("formatBox2").style.display="block";
-                    document.getElementById("formatBox1").style.display="none";
-                }
-    
-                function loginForm(){
-                    document.getElementById("formatBox1").style.display="block";
-                    document.getElementById("formatBox2").style.display="none";
-                }
-            
-            </script>
             <div class="photo">
-                <img src="photo.jpg" alt="happy" style="width: 500px; padding-top: 20px;" height="300px" />
+                <img src="photo.jpg" alt="happy" style="width: 480px; padding-top: 20px;" height="300px" />
                 
 
                 <div id="get">
@@ -219,6 +211,21 @@
                         <h2 >Disa pamje te Restaurantit</h2>
                         <img id="slideShow"/>
                     </header>
+
+
+                    <!--Nuk po ekzekutohet ne JS external-->
+                    <script type='text/javascript'>
+                    var i=0;
+                    function ndrysho_Foto(){
+                        let fotot= document.getElementById('slideShow');
+                        fotot.src='inside'+(i++%4)+".jpg";
+                    }
+                    function slider(){
+                        setInterval(ndrysho_Foto,11600);
+                    }
+                    document.addEventListener('load',slider());
+                
+                </script>
 
                 </div>
                 
