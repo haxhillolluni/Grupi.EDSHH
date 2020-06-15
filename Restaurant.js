@@ -33,91 +33,70 @@ function validate() {
 }
 
 
-
-
 //validimi Register///////////////////////////////////////
 
 function validate2(){
-    var firstname_error = document.form.firstname.value;
-    var lastname_error= document.form.lastname.value;
+    var username_error = document.form.username.value;
     var email_error = document.form.email.value;
     var password_error = document.form.password.value;
     var birthdate_error = document.form.birthdate.value;
    
-    var regexName = /^[A-Za-z]{3,20}$/;
+    var regexUsername = /^(([A-Za-z]{3,20}\d[A-Za-z]{3,20})||([A-Za-z]{3,20}\d[A-Za-z]{3,20}\d[A-Za-z]{3,20}||([A-Za-z]{3,20}))){3,20}$/;
     var regexEmail = /^\w+@[a-zA-Z0-9]+?.[a-zA-Z0-9]{2,3}$/;
     var regexPassword =  new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
     var regexBirthdate =/^((19|20)\d\d[- /.] (0[1-9]|1[012])[- /.] (0[1-9]|[12][0-9]|3[01])| (19|20)\d\d[. /.] (0[1-9]|1[012])[. /.] (0[1-9]|[12][0-9]|3[01])|(19|20)\d\d[//.] (0[1-9]|1[012])[//.] (0[1-9]|[12][0-9]|3[01]))$/;
 
+    
 
-    if(firstname_error == null || firstname_error== ""){
-        alert('please fill your first name');
-        firstname_error.focus();
-        firstname_error.style.borderColor='red';
+    if(username_error == null || username_error===""){
+        document.getElementById('message').innerHTML='<h5>Please fill your username</h5>';
+        username_error.focus();
+    
         return false;
-    }if(!(regexName.test(firstname_error))){
-        alert('the first name must have at least three characters');
-        firstname_error.focus();
-        firstname_error.style.borderColor='red';
+    }
+    else if(!(regexUsername.test(username_error))){
+        document.getElementById('message').innerHTML='<h5>Your username is not valide</h5>';
+        username_error.focus();
         return false;
-
     }
 
+    
 
-
-    if(lastname_error == null || lastname_error ==""){
-        alert('please fill your username');
-        lastname_error.style.borderColor='red';
-        lastname_error.focus();
-        return false;
-
-    }
-    if(!(regexName.test(lastname_error))){
-        alert('the last name must have at least three characters');
-        lastname_error.focus();
-        lastname_error.style.borderColor='red';
-        return false;
-
-    }
-
-
-    if(email_error == null || email_error ==""){
-        alert('please fill your email');
+    else if(email_error == null || email_error ===""){
+        document.getElementById('message').innerHTML='<h5>Please fill your email</h5>';
         email_error.focus();
-        email_error.style.borderColor='red';
         return false;
-    }if(!(regexEmail.test(email_error))){
-        alert('your email is not valide');
-        email_error.focus();
-        email_error.style.borderColor='red';
+    }else if(!(regexEmail.test(email_error))){
+        document.getElementById('message').innerHTML='<h5>Your email is not valide</h5>';
+         email_error.focus();
         return false;
     }
 
 
-    if(password_error == null || password_error ==""){
-        alert('please fill your password ');
+    else  if(password_error == null || password_error ===""){
+        document.getElementById('message').innerHTML='<h5>Please fill your password</h5>';
         password_error.focus();
-        password_error.style.borderColor='red';
         return false;
-    }if(!(regexPassword.test(password_error))){
-        alert('password must have 1 or more lowercase, uppercase alphabetic char, number and symbol. length>=8');
+    }else if(!(regexPassword.test(password_error))){
+        document.getElementById('message').innerHTML='<h5>Your password is not valide</h5>';
         password_error.focus();
-        password_error.style.borderColor='red';
         return false;
     }
-    if(birthdate_error == null || birthdate_error ==""){
-        alert('please fill your birthday date');
+    else if(birthdate_error == null || birthdate_error ===""){
+        document.getElementById('message').innerHTML='<h5>Please fill your birthday date</h5>';
         birthdate_error.focus();
-        birthdate_error.style.borderColor='red';
         return false;
-    }if(!(regexBirthdate.test(birthdate_error))){
-        alert('Birthday date must be yyyy-mm-dd or yyyy.mm.dd  or yyyy/mm/dd');
+    }else if(!(regexBirthdate.test(birthdate_error))){
+        document.getElementById('message').innerHTML='<h5>Your birthday date is not valide</h5>';
         birthdate_error.focus();
-        birthdate_error.style.borderColor='red';
         return false;
         
     }
-    else {return true;}
+    else {
+        document.getElementById('messagestrue').innerHTML='<h5>Your birthday date is not valide</h5>';
+        return true;
+    }
+     
 
 
 }
@@ -159,4 +138,3 @@ function send() {
     
 
 }
-

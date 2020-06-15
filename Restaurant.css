@@ -64,7 +64,7 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    left: 80%;
+    left: 80%; 
     margin-left: 500px;
 }
 .cart{
@@ -77,12 +77,14 @@ body,html{
     height: 100%;
     margin: 0px;
 }
+
 .main{
+
     
     background-image: url('RestaurantInside.jpg');
     background-repeat: no-repeat;
     background-size: 100% 90%;
-    padding-top:145px;
+    padding-top:125px;
    
         display: flex;
         flex-direction: column;
@@ -90,8 +92,9 @@ body,html{
         
         width: 100%;
         align-items: center;
-        
 }
+        
+
 .container2{
     display: flex;
     flex-direction: column;
@@ -242,18 +245,18 @@ A {text-decoration: none;}
 #formatBox1{
     display: flex;
     flex-direction: column;
-    width: 580px;
+    width: 480px;
     height: 380px;
     background-color: #2989A8;
     border-radius: 15px;
     margin-top: 0px;
-    min-width: 550px;
+    min-width: 480px;
 }
 
 #formatBox2{
     display: flex;
     flex-direction: column;
-    width: 580px;
+    width: 480px;
     height: 480px;
     background-color: #2989A8;
     border-radius: 15px;
@@ -262,14 +265,14 @@ A {text-decoration: none;}
 #buttonsBox{
     display: flex;
     height: 50px;
-    width: 580px;
+    width: 480px;
     margin-top: 5px;
 }
 
 #form{
     display: flex;
     flex-direction: column;
-    width: 580px;
+    width: 480px;
     height: 350px;
     color: white;
     justify-content: center;
@@ -281,7 +284,7 @@ A {text-decoration: none;}
 #form2{
     display: flex;
     flex-direction: column;
-    width: 580px;
+    width: 480px;
     height: 380px;
     color: white;
     justify-content: center;
@@ -316,7 +319,7 @@ A {text-decoration: none;}
 
 
 .txtField{
-    width: 400px;
+    width: 350px;
     height: 30px;
     background-color: #C8DCD8;
     
