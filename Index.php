@@ -148,7 +148,7 @@
         <h3>Zgjedh vendin me te mire per te ushqyer me se miri</h3>
         <form>
 
-            <button id="PorositTani"><a href="Foods.php">PorositOnline</a></button>
+            <button id="PorositTani"><a href="ushqimet.php">PorositOnline</a></button>
 
         </form>
 

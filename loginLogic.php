@@ -48,10 +48,9 @@
         
         <?php
             if(isset($_POST['Login'])){
-                 echo "<h1>Login successe</h1>";
+                 echo "<h1 style= 'color:green; background:white; width:300px; padding-left:40px;'>Login successeful </h1>";
             }else{
-
-                print "<h1>Login not successful</h1";
+               echo "<h1 style= 'color:red; background:black; width:300px; padding-left:40px;'> Login not successful </h1";
             }
           
         ?>

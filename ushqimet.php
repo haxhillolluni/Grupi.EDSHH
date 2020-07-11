@@ -6,13 +6,13 @@
         <link href="food.css" rel="stylesheet" type="text/css" /></title> 
          
         <div class="container" style="height: 60px;">
-            <a href="Restaurant.php">
-            <img src="logo.jpg" alt="Restaurant.php" style="padding-left: 20px;" width="55px" height="55px" />
+            <a href="Index.php">
+            <img src="logo.jpg" alt="Index.php" style="padding-left: 20px;" width="55px" height="55px" />
             </a>
             
             <div id="list">
                 <ul>
-                    <li class="lista"><a href="Restaurant.php">Home</a> </li>
+                    <li class="lista"><a href="Index.php">Home</a> </li>
                     <li class="lista"><a href="About_US.php">About Us</a> </li>
                     <li class="lista"><a href="Contact.php">Contact</a></li> 
                 </ul>
@@ -95,6 +95,6 @@
         <button type = 'button' onclick="myFunction()">Post</button>
     </div>
     
-    <script ></script>
+     <script src="food.js " type = "text/javascript" language='javascript'></script>
 </body>
 </html>
