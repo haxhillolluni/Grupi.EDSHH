@@ -95,6 +95,6 @@
         <button type = 'button' onclick="myFunction()">Post</button>
     </div>
     
-     <script src="food.js " type = "text/javascript" language='javascript'></script>
+    <script  src="food.js" type="text/javascript" language="javscript"></script>
 </body>
 </html>

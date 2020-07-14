@@ -50,7 +50,7 @@ function validate2(event){
     var regexUsername = /^[A-Za-z]{3,20}$/;
     var regexEmail = /^\w+@[a-zA-Z0-9]+?.[a-zA-Z0-9]{2,3}$/;
     var regexPassword =  new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
-    var regexBirthdate =/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+    var regexBirthdate =/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/; //dd/mm/yyyy
 
     if(username_error.value == null || username_error.value===""){
         document.getElementById('message').innerHTML='<h5>Please fill your username</h5>';

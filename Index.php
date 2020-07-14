@@ -77,7 +77,7 @@
 
             </div><br><br>  
 
-            <form name="form" id="form2">
+            <form name="form" id="form2" action="views/insertPerdoruesiView.php" method="post">
                 <label>User Name:</label>
                 <input type="text" name="username" autocomplete="off" id="username" placeholder="Enter username" class="txtField" required>
                 
