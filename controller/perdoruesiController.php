@@ -4,7 +4,7 @@ include_once '../models/perdoruesiModel.php';
     class PerdoruesiController{
         public function InsertPerdoruesi(){
             //insert Perdoruesi ne database 
-            $perdoruesi= new Perdoruesi($username,$email,$password,$birthdate);
+            $perdoruesi= new Perdoruesi($username, $email, $password, $birthdate);
             $perdoruesiMapper = new PerdoruesiMapper($perdoruesi);
             $perdoruesiMapper->insert();
             return true;

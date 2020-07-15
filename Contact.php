@@ -16,6 +16,7 @@
                     <li class="lista"><a href="Index.php">Home</a> </li>
                     <li class="lista"><a href="About_US.php">About Us</a> </li>
                     <li class="lista"><a href="Contact.php">Contact</a></li> 
+                    <li class="lista"><a href="Historiku.php">Historiku</a></li>
                 </ul>
                
             </div>
@@ -29,20 +30,22 @@
                     We're happy to answer to any questions you have or provide you with an estimate. Just send us a message in the<br>
                     form below with any questions you may have.
                 </p>
-                
-                <h5><label for=""><b>YOUR NAME (required)</b></label><br>
-                <input type="text" placeholder="" name="" id="yourName" style="width: 300px; height: 20px;"/><br></h5>
+                <form>
+                    <h5><label for=""><b>YOUR NAME (required)</b></label><br>
+                    <input type="text" placeholder="" name="" id="yourName" style="width: 300px; height: 20px;"><br></h5>
 
-                <h5><label for=""><b>YOUR EMAIL (required)</b></label><br>
-                <input type="text" placeholder="" name="" id="yourEmail"style="width: 300px; height: 20px;"/><br></h5>
+                    <h5><label for=""><b>YOUR EMAIL (required)</b></label><br>
+                    <input type="text" placeholder="" name="" id="yourEmail"style="width: 300px; height: 20px;"><br></h5>
 
-                <h5><label for=""><b>SUBJECT</b></label><br>
-                <input type="text" placeholder="" name="" id="subject"style="width: 300px; height: 20px;"/><br></h5>
+                    <h5><label for=""><b>SUBJECT</b></label><br>
+                    <input type="text" placeholder="" name="" id="subject"style="width: 300px; height: 20px;"><br></h5>
 
-                <h5><label for=""><b>Your MESSAGE</b></label><br>
-                <textarea type="text" placeholder="" name="" id="yourMessage"style="width: 300px; height: 120px;"></textarea><br></h5>
+                    <h5><label for=""><b>Your MESSAGE</b></label><br>
+                    <textarea type="text" placeholder="" name="" id="yourMessage"style="width: 300px; height: 120px;"></textarea><br></h5>
 
-                <button value="SEND" id="send" " style="background-color:rgb(19, 126, 197); color:white" onclick="send()" >SEND</button>
+                    <input type="submit" name="submitContact" value="SEND" id="send" onclick="send()" style="background-color:rgb(19, 126, 197); color:white" required>
+                    
+                </form>
             </div>
             <div id="contactUS2">
                 <h5 style="color: red;">EMAIL</h5>
@@ -57,6 +60,7 @@
                 Instagram: caffe&food_and_more<br>
                 Facebook:  caffe&food_and_more
                 <hr>
+                
             </div>
             
         </div>

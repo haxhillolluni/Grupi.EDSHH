@@ -16,8 +16,9 @@
         <div id="list">
             <ul>
                 <li class="lista"><a href="Index.php">Home</a> </li>
-                <li class="lista"><a href="About_US.php">About Us</a> </li>
-                <li class="lista"><a href="Contact.php">Contact</a></li>
+                    <li class="lista"><a href="About_US.php">About Us</a> </li>
+                    <li class="lista"><a href="Contact.php">Contact</a></li> 
+                    <li class="lista"><a href="Historiku.php">Historiku</a></li>
             </ul>
 
         </div>
@@ -94,7 +95,7 @@
                 <input type="text" name="birthdate" autocomplete="off" id="birthdate" placeholder="Enter BirthDate" class="txtField"required >
                 
                 <input name="submitButtonRegister" id= 'btn' type="submit" class="submitButtonRegister" value="Register"> 
-                <div id='message' style="color: red;" ><div id='messagestrue' style="color:green"></div></div>
+                <div id='message' style="color: red;" ><div id='messagestrue'onclick="validate2()" style="color:green"></div></div>
             </form>
 
         </div>

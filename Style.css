@@ -1,5 +1,4 @@
 .container{
-    display: flex;
     background-color: white;
     flex-direction: row;
     position:relative;
@@ -205,7 +204,7 @@ A {text-decoration: none;}
 #about{
     display: flex;
     flex-direction: column;
-    position:absolute;
+    position:relative;
     color: white;
     background-color: rgb(17, 45, 78);
     margin: 60px;
@@ -413,3 +412,20 @@ A {text-decoration: none;}
     width: 100%;
     text-align: center;
 }
+.CONTAINERHISTORIKU{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+  
+  /* Bottom right text */
+  
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    opacity: 0.7;
+    padding: 20px;
+  }

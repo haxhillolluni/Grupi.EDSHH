@@ -16,6 +16,7 @@
                     <li class="lista"><a href="Index.php">Home</a> </li>
                     <li class="lista"><a href="About_US.php">About Us</a> </li>
                     <li class="lista"><a href="Contact.php">Contact</a></li> 
+                    <li class="lista"><a href="Historiku.php">Historiku</a></li>
                 </ul>
             
             </div>

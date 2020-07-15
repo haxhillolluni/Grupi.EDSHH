@@ -1,14 +1,13 @@
 <?php
-
     include_once '../controller/perdoruesiController.php';
-    if(isset($_Post['submitButtonRegister'])){
-        $username =_Post['username'];
-         $email =_Post['email'];
-          $password =_Post['password'];
-           $birthdate =_Post['birthdate'];
+    if(isset($_POST['submitButtonRegister'])){
+        $username = $_POST['username'];
+         $email = $_POST['email'];
+          $password = $_POST['password'];
+           $birthdate = $_POST['birthdate'];
 
-           $view =new InsertView();
-           $view->insertPerdoruesi($username,$email,$password,$birthdate);
+           $view = new InsertView();
+           $view->insertPerdoruesi ($username,$email,$password,$birthdate);
 
     } 
     class InsertView{

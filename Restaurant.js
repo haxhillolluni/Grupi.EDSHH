@@ -36,12 +36,12 @@ function validate() {
 //validimi Register///////////////////////////////////////
  
 
-var btn = document.getElementById('btn');
-btn.addEventListener('click',validate2);
+// var btn = document.getElementById('btn');
+// btn.addEventListener('click',validate2);
 
-event.preventDefault();
+// event.preventDefault();
 
-function validate2(event){
+function validate2(){
     var username_error = document.form.username;
     var email_error = document.form.email.value;
     var password_error = document.form.password.value;
@@ -112,7 +112,7 @@ function validate2(event){
 //validimi register /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-function send() {
+function send(){
     var yourName = document.getElementById('yourName');
     var yourEmail = document.getElementById('yourEmail');
     var subject = document.getElementById('subject');
