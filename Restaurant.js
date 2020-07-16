@@ -42,7 +42,7 @@ function validate() {
 // event.preventDefault();
 
 function validate2(){
-    var username_error = document.form.username;
+    var username_error = document.form.username.value;
     var email_error = document.form.email.value;
     var password_error = document.form.password.value;
     var birthdate_error = document.form.birthdate.value;
@@ -52,13 +52,13 @@ function validate2(){
     var regexPassword =  new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
     var regexBirthdate =/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/; //dd/mm/yyyy
 
-    if(username_error.value == null || username_error.value===""){
+    if(username_error == null || username_error===""){
         document.getElementById('message').innerHTML='<h5>Please fill your username</h5>';
         username_error.focus();
     
         return false;
     }
-    else if(!(regexUsername.test(username_error.value))){
+    else if(!(regexUsername.test(username_error))){
         console.log("nrregull jem");
         document.getElementById('message').innerHTML='<h5>Your username is not valide</h5>';
         username_error.focus(); 
@@ -98,7 +98,7 @@ function validate2(){
         
     }
     else {
-        document.getElementById('messagestrue').innerHTML='<h5>Register succed you can login now</h5>';
+        document.getElementById('messagestrue').innerHTML='<h5>Register success you can login now</h5>';
         return true;
     }
      

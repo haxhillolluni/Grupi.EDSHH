@@ -412,3 +412,20 @@ A {text-decoration: none;}
     width: 100%;
     text-align: center;
 }
+.CONTAINERHISTORIKU{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+  
+  /* Bottom right text */
+  
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    opacity: 0.7;
+    padding: 20px;
+  }

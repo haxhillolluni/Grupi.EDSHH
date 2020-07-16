@@ -1,12 +1,12 @@
 <!doctype html>
-    <head>
-        <title>Historiku</title>
-        <link href="Style.css" rel="stylesheet" type="text/css" />
+  <head>
+        <title>Contact US</title>
+        <link href="Style.css" rel="stylesheet" type="text/css" /></title>
         <script src="Restaurant.js"></script>
  
          
         <div class="container" style="height: 60px;">
-            <a href="Index.php ">
+            <a href="Index.php">
             <img src="logo.jpg" alt="Index.php" style="padding-left: 20px;" width="55px" height="55px" />
             </a>
             
@@ -15,7 +15,7 @@
                     <li class="lista"><a href="Index.php">Home</a> </li>
                     <li class="lista"><a href="About_US.php">About Us</a> </li>
                     <li class="lista"><a href="Contact.php">Contact</a></li> 
-                    <li class="lista"><a href="Historiku.php">Historiku</a></li>
+                    <li class="lista"><a href="Historiku.php">Historiku</a></li> 
                 </ul>
                
             </div>

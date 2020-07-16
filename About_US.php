@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
-   <head>
-        <title>About US</title>
-        <link href="Style.css" rel="stylesheet" type="text/css" /></title>
+    <head>
+        <title>Contact US</title>
+        <link href="Restaurant.css" rel="stylesheet" type="text/css" /></title>
         <script src="Restaurant.js"></script>
-
-        
+ 
+         
         <div class="container" style="height: 60px;">
             <a href="Index.php">
             <img src="logo.jpg" alt="Index.php" style="padding-left: 20px;" width="55px" height="55px" />
@@ -16,13 +16,12 @@
                     <li class="lista"><a href="Index.php">Home</a> </li>
                     <li class="lista"><a href="About_US.php">About Us</a> </li>
                     <li class="lista"><a href="Contact.php">Contact</a></li> 
-                    <li class="lista"><a href="Historiku.php">Historiku</a></li>
+                    <li class="lista"><a href="Historiku.php">Historiku</a></li> 
                 </ul>
-            
+               
             </div>
-        </div>
-
-   </head>
+         </div>
+    </head>
    <body style="background-color: rgb(17, 45, 78); color: white;">
     <div id="about">
         <div id="about2">

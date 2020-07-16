@@ -4,8 +4,8 @@
 
 <head>
     <title>Caffe&food and more</title>
-    <link href="Style.css" rel="stylesheet" type="text/css"/>
-    <script src="Restaurant.js " type = "text/javascript" language='javascript'></script>
+    <link href="Restaurant.css" rel="stylesheet" type="text/css" />
+    <script src="Restaurant.js"></script>
 
 
     <div class="container" style="height: 60px;">
@@ -16,9 +16,9 @@
         <div id="list">
             <ul>
                 <li class="lista"><a href="Index.php">Home</a> </li>
-                    <li class="lista"><a href="About_US.php">About Us</a> </li>
-                    <li class="lista"><a href="Contact.php">Contact</a></li> 
-                    <li class="lista"><a href="Historiku.php">Historiku</a></li>
+                <li class="lista"><a href="About_US.php">About Us</a> </li>
+                <li class="lista"><a href="Contact.php">Contact</a></li>
+                 <li class="lista"><a href="Historiku.php">Historiku</a></li>
             </ul>
 
         </div>
@@ -95,11 +95,11 @@
                 <input type="text" name="birthdate" autocomplete="off" id="birthdate" placeholder="Enter BirthDate" class="txtField"required >
                 
                 <input name="submitButtonRegister" id= 'btn' type="submit" class="submitButtonRegister" value="Register"> 
-                <div id='message' style="color: red;" ><div id='messagestrue'onclick="validate2()" style="color:green"></div></div>
+                <div id='message' style="color: red;" ><div id='messagestrue' onclick="validate2()" style="color:green"></div></div>
             </form>
 
         </div>
-
+            <script src="Restaurant.js " type = "text/javascript" language='javascript'></script>
 
 
 
